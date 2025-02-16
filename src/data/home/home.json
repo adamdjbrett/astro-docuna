@@ -1,0 +1,181 @@
+{
+    "intro": {
+        "title": "Build your website documentation with docuna",
+        "text": "Docuna is a special astro starlight theme for fast creation and SEO for your documentation site projects.",
+        "image": "/img/pesawat.svg"
+    },
+    "why": {
+        "title": "Why must docuna",
+        "image": "/img/report.svg"
+    },
+    "why_list": [
+        {
+            "title": "Super Fast",
+            "text": "Based on Starlight Astro JS. Significant speed, very complete for developing your documentation website.",
+            "icon": "rocket",
+            "link": "/"
+        },
+        {
+            "title": "Easy Config",
+            "text": "No need to hardcode, just work with markdown, mdx and JSON files to update content and design UI.",
+            "icon": "setting",
+            "link": "/getting-started/"
+        }
+    ],
+    "features": "The Best Features",
+    "feature_list": [
+        {
+            "title": "JSON Conf",
+            "text": "Ease of setting up your website by using JSON Conf.in the work.",
+            "icon": "star",
+            "link": "/getting-started/configuration"
+        },
+        {
+            "title": "Markdown Content",
+            "text": "It's faster to create documentation article by using markdown format.",
+            "icon": "star",
+            "link": "/getting-started/content"
+        },
+        {
+            "title": "MDX Support",
+            "text": "Full MDX support, making it easy to customize your project.",
+            "icon": "star",
+            "link": "/getting-started/structure"
+        },
+        {
+            "title": "Landing Page",
+            "text": "The design of the home page using a landing page concept becomes more attractive.",
+            "icon": "star",
+            "link": "/getting-started/design"
+        },
+        {
+            "title": "Documentation Page",
+            "text": "Starlight's cool and complete documentation page, makes it even easier for users.",
+            "icon": "star",
+            "link": "/getting-started/content"
+        },
+        {
+            "title": "Static Page",
+            "text": "Include static page, to create your static page.",
+            "icon": "star",
+            "link": "/getting-started/static-page"
+        }
+    ],
+    "pricing": {
+        "title": "Picing and Plan",
+        "cover": "/img/ssg.svg",
+        "text": "If you need astro js or astro starlight documentation website theme template so you can choose our theme template project."
+    },
+    "plan": [
+        {
+            "title": "Blacks",
+            "icon": "rocket",
+            "price": "$65",
+            "link": "https://creativitaz.gumroad.com/l/astrojs-blacks",
+            "features": [
+                {
+                    "text": "Astro JS"
+                },
+                {
+                    "text": "Multipurpose Themes"
+                },
+                {
+                    "text": "Gallery Page"
+                },
+                {
+                    "text": "Astro Image + Picture"
+                },
+                {
+                    "text": "Astro SEO RSS Sitemap"
+                },
+                {
+                    "text": "Image & Video Gallery"
+                },
+                {
+                    "text": "Services Page"
+                },
+                {
+                    "text": "Blog Page"
+                },
+                {
+                    "text": "Contact Page"
+                }
+            ]
+        },
+        {
+            "title": "Car",
+            "icon": "star",
+            "price": "$65",
+            "link": "https://creativitaz.gumroad.com/l/astro-js-car",
+            "features": [
+                {
+                    "text": "Astro JS"
+                },
+                {
+                    "text": "Booking Website"
+                },
+                {
+                    "text": "Astro SEO RSS Sitemap"
+                },
+                {
+                    "text": "Astro Image + Picture"
+                },
+                {
+                    "text": "Astro SEO RSS Sitemap"
+                },
+                {
+                    "text": "Booking Form"
+                },
+                {
+                    "text": "Booking Page"
+                },
+                {
+                    "text": "Car List"
+                },
+                {
+                    "text": "Car Detail"
+                }
+            ]
+        },
+        {
+            "title": "Docus",
+            "icon": "laptop",
+            "price": "$65",
+            "link": "https://creativitaz.gumroad.com/l/starlightastrodocus",
+            "features": [
+                {
+                    "text": "Astro JS"
+                },
+                {
+                    "text": "Landing Page"
+                },
+                {
+                    "text": "Documentation Page"
+                },
+                {
+                    "text": "Astro Picture"
+                },
+                {
+                    "text": "Astro SEO RSS Sitemap"
+                },
+                {
+                    "text": "Static Page"
+                },
+                {
+                    "text": "Blog Page"
+                },
+                {
+                    "text": "Contact Page"
+                },
+                {
+                    "text": "Contact Form"
+                }
+            ]
+        }
+    ],
+    "section": {
+        "title": "Hire Our Team Dev",
+        "text": "If you have astro js or documentation website project, so you can hire our team dev for help you develope your astro js website project.",
+        "link": "https://www.fiverr.com/creativitas/design-modern-documentation-website-astro-js-stalight"
+    }
+}

@@ -1,0 +1,64 @@
+---
+import Conf from '../data/config/config.json';
+import { Picture } from 'astro:assets';
+---
+<div class="col-md-12 p-3">
+  <Picture
+    src={Conf.image}
+    alt={Conf.description}
+    formats={['avif', 'webp']}
+    sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px`}
+    width="1400"
+    height="400"
+    class="img-fluid"
+    decoding="async"
+  />
+</div>
+<footer class="container-fluid der shadow mb-1">
+  <div class="row">
+    <div class="col-md-12 mt-5 text-center">
+      <h3>{Conf.title}</h3>
+    </div>
+    <div class="col-md-2 col-12 p-3 p-md-5">
+      <p><strong>{Conf.nav1_title}</strong></p>
+      <div class="row">
+         {Conf.nav1.map(({ nav,link }) => (
+        <a href={link} class="col-md-12">
+          {nav}
+        </a>
+        ))}
+      </div>
+    </div>
+    <div class="col-md-6 col-12 p-3 p-md-5">
+      <p><strong>{Conf.nav2_title}</strong></p>
+      <div class="row">
+ {Conf.nav2.map(({ nav,link }) => (
+        <a href={link} class="col-md-4 col-6">
+          {nav}
+        </a>
+        ))}
+      </div>
+    </div>
+    <div class="col-md-2 col-6 p-3 p-md-5">
+      <p><strong>{Conf.nav3_title}</strong></p>
+      <div class="row">
+ {Conf.nav3.map(({ nav,link }) => (
+        <a href={link} class="col-md-12">
+          {nav}
+        </a>
+        ))}
+      </div>
+    </div>
+    <div class="col-md-2 col-6 p-3 p-md-5">
+      <p><strong>{Conf.nav4_title}</strong></p>
+      <div class="row">
+ {Conf.nav4.map(({ nav,link }) => (
+        <a href={link} class="col-md-12">
+          {nav}
+        </a>
+        ))}
+      </div>
+    </div>
+
+  </div>
+</footer>

@@ -1,0 +1,43 @@
+---
+title: "Contact Docuna"
+description: "More info and help ?? Contact Docuna Starlight Astro JS developer"
+image: "/img/report.svg"
+email: axcora@gmail.com
+template: splash
+---
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Picture } from 'astro:assets';
+import Conf from '../../data/config/config.json';
+import Footer from '../../widget/Footer.astro';
+import Header from '../../widget/Header.astro';
+import '../../styles/doc.css';
+import '../../styles/deja.css';
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-10 mx-auto p-3">
+  <Picture
+    src={frontmatter.image}
+    alt={Conf.description}
+    formats={['avif', 'webp']}
+    sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px`}
+    width="1200"
+    height="400"
+    class="img-fluid"
+    decoding="async"
+  />
+<h2><strong><a href="/contact">{frontmatter.description}</a></strong></h2>
+
+### Contact Form 
+
+<form action="{`https://airform.io/${frontmatter.email}`}" method="post">
+<input type="text" name="name" placeholder="Enter your name" required/>
+<input type="email" name="email" placeholder="Enter your email" required/>
+<textarea name="message" placeholder="Enter your message"></textarea>
+<button class="butona">Send Message</button>
+</form>
+
+</div>
+</div>
+</div>
+<Footer/>

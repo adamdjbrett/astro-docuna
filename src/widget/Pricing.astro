@@ -1,0 +1,57 @@
+---
+import Data from '../data/home/home.json';
+import { Icon } from '@astrojs/starlight/components';
+import { Picture } from 'astro:assets';
+---
+<div class="col-md-12 p-3">
+<Picture
+    src={Data.pricing.cover}
+    alt={Data.pricing.text}
+    formats={['avif', 'webp']}
+    sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px`}
+    width="1400"
+    height="400"
+    class="img-fluid"
+    decoding="async"
+  />
+  </div>
+
+<div class="row justify-content-center">
+<div class="col-md-10 mx-auto p-3 text-center">
+  <h3><strong><a href="/">{Data.pricing.title}</a></strong></h3>
+  <p>{Data.pricing.text}</p>
+</div>
+
+ {Data.plan.map(({ title,icon,price,link,features }) => (
+<div class="col-md-4 p-3">
+  <div class="p-3 p-md-5 lights der">
+    <Icon
+      name={icon}
+      color={title}
+      class="bgs p-1 ser"
+      size="4rem"
+    />
+    <h3 class="text-center"><a href="/">{title}</a></h3>
+    <ul>
+      {features.map(({ text }) => (
+        <li>{text}</li>
+      ))}
+    </ul>
+    <p class="lights text-center p-3 shadow der">
+      <a href={link}>Buy Astro {title}</a>
+    </p>
+  </div>
+</div>
+ ))}
+ </div>
+ 
+<div class="col-md-4 p-3">
+  <h3 clas="display-4">{Data.section.title}</h3>
+</div>
+
+<div class="col-md-8 p-3">
+  <p>{Data.section.text}</p>
+  <p class="lights text-center p-3 shadow der">
+    <a href={Data.section.link}>{Data.section.title}</a>
+  </p>
+</div>

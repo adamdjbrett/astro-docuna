@@ -1,0 +1,109 @@
+{
+  "title": "Docuna Astro Starlight Themes",
+  "description": "Develope your modern website with astro js",
+  "image": "/img/ft1.svg",
+  "nav1_title": "Menu",
+  "nav1": [
+    {
+      "nav": "Home",
+      "link": "/"
+    },
+    {
+      "nav": "About",
+      "link": "/about"
+    },
+    {
+      "nav": "Documentation",
+      "link": "/getting-started/"
+    },
+    {
+      "nav": "Contact",
+      "link": "/contact"
+    }
+  ],
+  "nav2_title": "Documentation",
+  "nav2": [
+    {
+      "nav": "Get Started",
+      "link": "/getting-started/"
+    },
+    {
+      "nav": "Download",
+      "link": "/getting-started/download"
+    },
+    {
+      "nav": "Installation",
+      "link": "/getting-started/installation"
+    },
+    {
+      "nav": "Structure",
+      "link": "/getting-started/structure"
+    },
+    {
+      "nav": "Configuration",
+      "link": "/getting-started/configuration"
+    },
+    {
+      "nav": "Design UI",
+      "link": "/getting-started/design"
+    },
+    {
+      "nav": "Content Doc",
+      "link": "/getting-started/content"
+    },
+    {
+      "nav": "Static Page",
+      "link": "/getting-started/static-page"
+    },
+    {
+      "nav": "Host Deploy",
+      "link": "/getting-started/hosting-deploy"
+    },
+    {
+      "nav": "Headless CMS",
+      "link": "/getting-started/headlesscms"
+    },
+    {
+      "nav": "Source Code",
+      "link": "https://www.hockeycomputindo.com/themes/astro"
+    }
+  ],
+  "nav3_title": "Project",
+  "nav3": [
+    {
+      "nav": "Blacks",
+      "link": "/project/blacks"
+    },
+    {
+      "nav": "Docus",
+      "link": "/project/docus"
+    },
+    {
+      "nav": "Car",
+      "link": "/project/rentcar"
+    },
+    {
+      "nav": "Docuna",
+      "link": "/project/docuna"
+    }
+  ],
+  "nav4_title": "Contact",
+  "nav4": [
+    {
+      "nav": "Whatsapp",
+      "link": "https://wa.me/62895339403223"
+    },
+    {
+      "nav": "Call Us",
+      "link": "tel:+62895339403223"
+    },
+    {
+      "nav": "Email",
+      "link": "mailto:axcora@gmail.com"
+    },
+    {
+      "nav": "Hire Dev",
+      "link": "https://www.fiverr.com/creativitas"
+    }
+  ]
+}

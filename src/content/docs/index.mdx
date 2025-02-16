@@ -1,0 +1,58 @@
+---
+title: "Astro JS Dev"
+description: "Develope your modern website with astro js"
+template: splash
+---
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Picture } from 'astro:assets';
+import { Icon } from '@astrojs/starlight/components';
+import Conf from '../../data/config/config.json';
+import Data from '../../data/home/home.json';
+import Footer from '../../widget/Footer.astro';
+import Header from '../../widget/Header.astro';
+import Pricing from '../../widget/Pricing.astro';
+import '../../styles/doc.css';
+import '../../styles/deja.css';
+
+<div class="container-fluid">
+<div class="row">
+<Header/>
+
+<div class="col-md-7 p-3">
+  <Picture
+    src={Data.why.image}
+    alt={Conf.description}
+    formats={['avif', 'webp']}
+    sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px`}
+    width="800"
+    height="400"
+    class="img-fluid"
+    decoding="async"
+  />
+</div>
+<div class="col-md-5 p-3 p-md-5">
+  <h3>{Data.why.title}</h3>
+  {Data.why_list.map(({ title, text, icon, link }) => (
+    <Card title={title} icon={icon}>
+      {text}
+      <br />
+      <a href={link}>{title} Info →</a>
+    </Card>
+  ))}
+</div>
+
+<div class="col-md-12 p-3">
+  <h3><strong><a href="/">{Data.features}</a></strong></h3>
+  <CardGrid stagger>
+    {Data.feature_list.map(({ title, text, icon, link }) => (
+      <Card title={title} icon={icon}>
+        {text}<br/><a href={link}>{title} Info →</a>
+      </Card>
+    ))}
+  </CardGrid>
+</div>
+
+<Pricing/>
+</div>
+</div>
+<Footer/>
